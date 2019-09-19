@@ -1,0 +1,110 @@
+@primary-bg: #030301;
+@secondary-bg: #0c0f13;
+@font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@header-font: "Zilla Slab", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+@header-color-primary: #ffd560;
+@font-l: 1.55185rem;
+@mx-w: 1200px;
+@border: 1px solid;
+@border-ln: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)) 1 100% /
+  1 / 0 stretch;
+@margin-l-r: 0 auto 0 auto;
+@margin-t: 24px 0px;
+@margin-b: 1.65rem;
+@p-margin-b: 0 0 0.66rem 0;
+@bold: 500;
+@padding-pr: 16px 64px;
+@color-primary: #cccccc;
+@line-h: 1.1;
+@grid: grid;
+@gap-16: 16px;
+@col-4: repeat(4, auto);
+@m-col-2: auto 1fr;
+@padding: 16px;
+
+body {
+  background: @primary-bg;
+  font-family: @font;
+  color: @color-primary;
+  h1 {
+    margin-bottom: @margin-b;
+    color: @header-color-primary;
+    font-family: @header-font;
+    font-weight: @bold;
+    text-rendering: optimizeLegibility;
+    font-size: @font-l;
+    line-height: @line-h;
+  }
+  .container {
+    background: @secondary-bg;
+    display: @grid;
+    grid-template-columns: @m-col-2;
+    align-content: start;
+    height: 100%;
+    min-height: 100vh;
+    max-width: @mx-w;
+    margin: @margin-l-r;
+    .left-profile {
+      align-self: start;
+      border-right: @border;
+      margin: @margin-t;
+      padding: @padding-pr;
+      border-image: @border-ln;
+      max-width: 20rem;
+      p:not(:last-child) {
+        margin: @p-margin-b;
+      }
+      p {
+        margin: 0;
+        a {
+          text-decoration: none;
+          color: @header-color-primary;
+        }
+      }
+      .social {
+        display: @grid;
+        grid-gap: @gap-16;
+        grid-template-columns: @col-4;
+        justify-items: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        a.social-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          color: inherit;
+          border-radius: 50%;
+          background: transparent;
+          border-width: 1px;
+          border-style: solid;
+          border-color: rgba(255, 255, 255, 0.6);
+          border-image: initial;
+          padding: @padding;
+          transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+        }
+      }
+    }
+    .right-profile {
+      margin-left: 64px;
+      margin-right: 64px;
+      padding: 2.475rem 1.2375rem;
+      .block--thing {
+        background: #ffd560;
+        color: #0c0f13;
+        margin: 0 0 1rem 0;
+      }
+      .block--thing:first-child {
+        margin: 6rem 0 1rem 0;
+      }
+      .block--big {
+        font-size: 1.3rem;
+        padding: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  background: #030301;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #cccccc;
+}
+body h1 {
+  margin-bottom: 1.65rem;
+  color: #ffd560;
+  font-family: "Zilla Slab", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 1.55185rem;
+  line-height: 1.1;
+}
+body .container {
+  background: #0c0f13;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: start;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+body .container .left-profile {
+  align-self: start;
+  border-right: 1px solid;
+  margin: 24px 0px;
+  padding: 16px 64px;
+  border-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)) 1 Infinity% stretch;
+  max-width: 20rem;
+}
+body .container .left-profile p:not(:last-child) {
+  margin: 0 0 0.66rem 0;
+}
+body .container .left-profile p {
+  margin: 0;
+}
+body .container .left-profile p a {
+  text-decoration: none;
+  color: #ffd560;
+}
+body .container .left-profile .social {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, auto);
+  justify-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+body .container .left-profile .social a.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 50%;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-image: initial;
+  padding: 16px;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+body .container .right-profile {
+  margin-left: 64px;
+  margin-right: 64px;
+  padding: 2.475rem 1.2375rem;
+}
+body .container .right-profile .block--thing {
+  background: #ffd560;
+  color: #0c0f13;
+  margin: 0 0 1rem 0;
+}
+body .container .right-profile .block--thing:first-child {
+  margin: 6rem 0 1rem 0;
+}
+body .container .right-profile .block--big {
+  font-size: 1.3rem;
+  padding: 2rem;
+}
