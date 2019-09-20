@@ -70,10 +70,23 @@ body .container .right-profile {
   margin-right: 64px;
   padding: 2.475rem 1.2375rem;
 }
-body .container .right-profile .block--thing {
+body .container .right-profile .card-block {
   background: #ffd560;
   color: #0c0f13;
   margin: 0 0 1rem 0;
+  padding: 2rem;
+}
+body .container .right-profile .card-block p {
+  font-size: 1.3rem;
+}
+body .container .right-profile .card-block p a {
+  color: #EE4266;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+}
+body .container .right-profile .card-block p i {
+  font-weight: 700;
+  letter-spacing: 0.03rem;
 }
 body .container .right-profile h2 {
   margin-top: 4rem;
@@ -84,10 +97,6 @@ body .container .right-profile h2 {
   font-size: 1.2rem;
   line-height: 1.1;
 }
-body .container .right-profile .block--thing:first-child {
+body .container .right-profile .card-block:first-child {
   margin: 6rem 0 1rem 0;
-}
-body .container .right-profile .block--big {
-  font-size: 1.3rem;
-  padding: 2rem;
 }

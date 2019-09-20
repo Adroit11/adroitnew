@@ -1,5 +1,6 @@
 @primary-bg: #030301;
 @secondary-bg: #0c0f13;
+@text-secondary: #EE4266;
 @font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 @header-font: "Zilla Slab", -apple-system, "BlinkMacSystemFont", "Segoe UI",
@@ -17,6 +18,8 @@
 @margin-b: 1.65rem;
 @p-margin-b: 0 0 0.66rem 0;
 @bold: 500;
+@bolder: 700;
+@wide: 0.03rem;
 @padding-pr: 16px 64px;
 @color-primary: #cccccc;
 @line-h: 1.1;
@@ -95,10 +98,23 @@ body {
       margin-left: 64px;
       margin-right: 64px;
       padding: 2.475rem 1.2375rem;
-      .block--thing {
+      .card-block {
         background: #ffd560;
         color: #0c0f13;
         margin: 0 0 1rem 0;
+        padding: 2rem;
+        p {
+          font-size: 1.3rem;
+          a {
+            color: @text-secondary;
+            font-weight: @bolder;
+            letter-spacing: @wide;
+          }
+          i {
+            font-weight: @bolder;
+            letter-spacing: @wide;
+          }
+        }
       }
       h2 {
         margin-top: @margin-top;
@@ -109,12 +125,8 @@ body {
         font-size: @font-m;
         line-height: @line-h;
       }
-      .block--thing:first-child {
+      .card-block:first-child {
         margin: 6rem 0 1rem 0;
-      }
-      .block--big {
-        font-size: 1.3rem;
-        padding: 2rem;
       }
     }
   }
