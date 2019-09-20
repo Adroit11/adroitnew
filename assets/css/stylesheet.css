@@ -1,11 +1,11 @@
 body {
-  background: #030301;
+  background: #262626;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #cccccc;
+  color: #d7d7d9;
 }
 body h1 {
   margin-bottom: 1.65rem;
-  color: #ffd560;
+  color: #737373;
   font-family: "Zilla Slab", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-weight: 500;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,7 @@ body h1 {
   line-height: 1.1;
 }
 body .container {
-  background: #0c0f13;
+  background: #0d0d0d;
   display: grid;
   grid-template-columns: auto 1fr;
   align-content: start;
@@ -38,7 +38,7 @@ body .container .left-profile p {
 }
 body .container .left-profile p a {
   text-decoration: none;
-  color: #ffd560;
+  color: #737373;
 }
 body .container .left-profile .social {
   display: grid;
@@ -71,8 +71,8 @@ body .container .right-profile {
   padding: 2.475rem 1.2375rem;
 }
 body .container .right-profile .card-block {
-  background: #ffd560;
-  color: #0c0f13;
+  background: #262626;
+  color: #d7d7d9;
   margin: 0 0 1rem 0;
   padding: 2rem;
 }
@@ -80,7 +80,7 @@ body .container .right-profile .card-block p {
   font-size: 1.3rem;
 }
 body .container .right-profile .card-block p a {
-  color: #EE4266;
+  color: #737373;
   font-weight: 700;
   letter-spacing: 0.03rem;
 }
